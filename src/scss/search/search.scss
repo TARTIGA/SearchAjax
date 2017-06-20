@@ -1,0 +1,653 @@
+                    /****Search New***/
+                    
+                    .list_padding,
+                    .search_list .category_header,
+                    .search_list .category_elem,
+                    .search_list .products_header {
+                        padding-left: 38px;
+                    }
+                    
+                    .list_header,
+                    .search_list .category_header,
+                    .search_list .products_header {
+                        height: 30px;
+                        background: #f5f6fa;
+                        border-top: 1px solid #dde1e2;
+                    }
+                    
+                    .list_hover,
+                    .search_list .category_elem:hover,
+                    .search_list .products_elem:hover {
+                        background-color: #ebf9fd;
+                    }
+                    
+                    .product_padding,
+                    .search_list .products_elem {
+                        padding: 7px 0px 2px 32px;
+                    }
+                    
+                    .menu-search {
+                        .input_wrapper {
+                            background-color: #FFF;
+                            height: 60px;
+                            position: absolute;
+                            background: transparent;
+                        }
+                        .icon-ico_delete {
+                            position: absolute;
+                            height: 50px;
+                            width: 32px;
+                            cursor: pointer;
+                            display: none;
+                            &:hover {
+                                color: #FC6621;
+                            }
+                        }
+                    }
+                    
+                    // FOR MIDDLE INPUT
+                    .menu-search_middle {
+                        margin-top: 6px;
+                        margin-bottom: 80px;
+                        .input_middle {
+                            height: 50px;
+                            margin-right: 33px;
+                        }
+                        button {
+                            width: 122px;
+                        }
+                        .search_list {
+                            // width: 950px !important;
+                            top: 53px !important;
+                            left: 0px !important;
+                        }
+                        .icon-ico_delete {
+                            top: 12px;
+                            left: 380px;
+                            font-size: 28px;
+                            width: 30px;
+                            display: none;
+                        }
+                        .search_info {
+                            top: 53px;
+                            left: 0px;
+                            width: 950px;
+                        }
+                    }
+                    
+                    .menu-search .search-form .search_list {
+                        box-shadow: 0px 4px 10px 1px rgba(77, 91, 97, 0.35);
+                        border-radius: 5px;
+                        position: absolute;
+                        top: 41px;
+                        left: -8px;
+                        // width: 100%;
+                        background-color: #fff;
+                        a {
+                            text-decoration: none;
+                            color: #000;
+                             :hover {
+                                text-decoration: none;
+                                color: #000;
+                            }
+                        }
+                        .category {
+                            border-left: 1px solid #dde1e2;
+                            border-right: 1px solid #dde1e2;
+                            &_header {
+                                /*custom* custom REWRITE*/
+                                line-height: 2;
+                                font-size: 13px;
+                                color: #6e787d;
+                                border-radius: 3px 3px 0px 0px;
+                                border-bottom: 1px solid #dde1e2;
+                            }
+                            &_elem {
+                                height: 32px;
+                                line-height: 2.3;
+                                cursor: pointer;
+                                color: #000;
+                                font-size: 14px;
+                                transition: 0.7s;
+                            }
+                        }
+                        .products {
+                            border-left: 1px solid #dde1e2;
+                            border-right: 1px solid #dde1e2;
+                            &_header {
+                                /*custom REWRITE*/
+                                line-height: 2;
+                                font-size: 13px;
+                                color: #6e787d;
+                            }
+                            &_elem {
+                                min-height: 100px;
+                                border-top: 1px solid #dde1e2;
+                                cursor: pointer;
+                                padding: 13px 0px 0px 39px;
+                                transition: 0.7s;
+                                .elem__sale {
+                                    color: #ff6106;
+                                    font-size: 25px !important;
+                                    position: absolute;
+                                    left: 9px;
+                                    margin-top: -5px;
+                                }
+                                .elem_img {
+                                    display: block;
+                                    float: left;
+                                    // max-width: 100px;
+                                    width: 100px;
+                                    max-height: 80px;
+                                    padding-right: 4px;
+                                    margin-top: 15px;
+                                    height: auto;
+                                    overflow: hidden;
+                                    img {
+                                        margin: auto;
+                                    }
+                                }
+                                .elem_params {
+                                    padding: 0px 0px 5px 10px;
+                                    display: inline-block;
+                                }
+                                .elem_name {
+                                    width: 70%;
+                                    font-size: 14px;
+                                    color: #0078c1;
+                                    margin-bottom: 7px;
+                                    white-space: normal;
+                                    .choose {
+                                        font-weight: bold;
+                                        text-decoration: underline;
+                                    }
+                                }
+                                .elem_article {
+                                    font-size: 11px;
+                                    color: #6e787d;
+                                }
+                                .elem_color {
+                                    margin: 5px 0px 5px 0px;
+                                    display: inline-block;
+                                    max-width: 60%;
+                                    overflow: hidden;
+                                }
+                                .elem_color .color_box {
+                                    display: inline-block;
+                                    margin-right: 5px;
+                                    border: 1px solid #B7BCBF;
+                                    height: 10px;
+                                    width: 10px;
+                                    border-radius: 2px;
+                                    cursor: pointer;
+                                }
+                                .elem_price {
+                                    font-size: 16px;
+                                    color: #000;
+                                    .rub {
+                                        font-size: 13px;
+                                    }
+                                    .price_old {
+                                        color: #6e787d;
+                                        margin-right: 5px;
+                                        text-decoration: line-through;
+                                        &__line {
+                                            text-decoration: line-through;
+                                            color: #e30613;
+                                        }
+                                        .price_old__text {
+                                            color: #6e787d;
+                                             :hover {
+                                                color: #6e787d;
+                                            }
+                                        }
+                                        // &:before {
+                                        //     content: "-";
+                                        //     width: 100%;
+                                        //     text-decoration: line-through;
+                                        //     color: red;
+                                        // }
+                                    }
+                                }
+                            }
+                        }
+                        .footer {
+                            background: #f5f6fa;
+                            border-top: 1px solid #dde1e2;
+                            border-radius: 0px 0px 3px 3px;
+                        }
+                        .footer_button {
+                            margin: 22px 0px 22px 40px;
+                            height: 30px;
+                            width: 140px;
+                            /*custom*/
+                            line-height: 1.9;
+                            font-size: 14px;
+                            font-family: sans-serif;
+                            /*custom*/
+                        }
+                    }
+                    
+                    //for top searchlist refix
+                    .menu-search {
+                        .search-form_top {
+                            .search_list {
+                                width: 100%; // fix it in js 
+                            }
+                        }
+                    }
+                    
+                    .menu-search_middle {
+                        input#srch {
+                            width: 86% !important;
+                        }
+                        .input_wrapper {
+                            width: 100%;
+                        }
+                        #search_list {
+                            width: 86% !important;
+                        }
+                        .search_info {
+                            width: 86% !important;
+                        }
+                        .search_info.error {
+                            width: 86% !important;
+                        }
+                        .icon-ico_delete {
+                            left: 950px !important;
+                        }
+                    }
+                    
+                    @media all and (max-width: 1200px) {
+                        .menu-search {
+                            .search_list {
+                                .products {
+                                    &_elem {
+                                        padding: 13px 0px 0px 0px;
+                                        .elem_name {
+                                            font-size: 14px;
+                                        }
+                                        .elem_color {
+                                            margin: 5px 0px 5px 0px;
+                                            max-width: 57%;
+                                            float: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .menu-search_middle {
+                            input#srch {
+                                width: 82% !important;
+                            }
+                            #search_list {
+                                width: 82% !important;
+                            }
+                            .search_info {
+                                width: 82% !important;
+                            }
+                            .search_info.error {
+                                width: 82% !important;
+                            }
+                            .icon-ico_delete {
+                                left: 740px !important;
+                            }
+                        }
+                    }
+                    
+                    @media all and (max-width: 1100px) {
+                        .menu-search_middle {
+                            input#srch {
+                                width: 83% !important;
+                            }
+                            #search_list {
+                                width: 83% !important;
+                            }
+                            .search_info {
+                                width: 83% !important;
+                            }
+                            .search_info.error {
+                                width: 83% !important;
+                            }
+                            .icon-ico_delete {
+                                left: 737px !important;
+                            }
+                        }
+                    }
+                    
+                    @media all and (max-width: 1000px) {
+                        .menu-search {
+                            .search_list {
+                                .category {
+                                    &_elem {
+                                        font-size: 12px !important;
+                                    }
+                                }
+                                .products {
+                                    &_elem {
+                                        padding: 13px 0px 0px 20px !important;
+                                        .elem_name {
+                                            width: 60% !important;
+                                            font-size: 12px !important;
+                                        }
+                                        .elem_color {
+                                            margin: 5px 0px 5px 0px;
+                                            max-width: 40%;
+                                            float: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .menu-search_middle {
+                            input#srch {
+                                width: 81% !important;
+                                margin-right: 10px;
+                            }
+                            #search_list {
+                                width: 81%!important;
+                            }
+                            .search_info {
+                                width: 81%!important;
+                            }
+                            .search_info.error {
+                                width: 81% !important;
+                            }
+                            .icon-ico_delete {
+                                left: 544px !important;
+                            }
+                        }
+                    }
+                    
+                    @media all and (max-width: 990px) {
+                        .menu-search_middle {
+                            input#srch {
+                                width: 81% !important;
+                                margin-right: 10px;
+                            }
+                            #search_list {
+                                width: 81% !important;
+                            }
+                            .search_info {
+                                width: 81% !important;
+                            }
+                            .search_info.error {
+                                width: 81% !important;
+                            }
+                            .icon-ico_delete {
+                                left: 545px !important;
+                            }
+                        }
+                    }
+                    
+                    @media all and (max-width: 960px) {
+                        .menu-search {
+                            .input_wrapper {
+                                width: 100%;
+                                // .search_form--middle {
+                                //     width: 100%;
+                                // }
+                            }
+                            .search_list {
+                                .products {
+                                    &_elem {
+                                        .elem_name {
+                                            width: 45% !important;
+                                        }
+                                        .elem_color {
+                                            margin: 5px 0px 5px 0px;
+                                            float: none;
+                                            max-width: 34%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .menu-search_middle {
+                            input#srch {
+                                width: 81% !important;
+                            }
+                            #search_list {
+                                width: 81%!important;
+                            }
+                            .search_info {
+                                width: 81%!important;
+                            }
+                            .search_info.error {
+                                width: 81% !important;
+                            }
+                        }
+                    }
+                    
+                    @media all and (max-width: 768px) {
+                        .menu-search {
+                            .search_list {
+                                .products {
+                                    &_elem {
+                                        .elem_name {
+                                            width: 35% !important;
+                                        }
+                                        .elem_color {
+                                            margin: 5px 0px 5px 0px;
+                                            float: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .menu-search_middle {
+                            input#srch {
+                                width: 77% !important;
+                            }
+                            .input_middle {
+                                width: 79%;
+                                margin-right: 10px;
+                            }
+                            #search_list {
+                                width: 79%;
+                            }
+                            .search_info {
+                                width: 79%!important;
+                            }
+                            .search_info.error {
+                                width: 79% !important;
+                            }
+                            // .icon-ico_delete {
+                            //     left: 480px !important;
+                            // }
+                        }
+                    }
+                    
+                    @media all and (max-width: 845px) {
+                        .menu-search_middle {
+                            input#srch {
+                                width: 77% !important;
+                            }
+                            .input_middle {
+                                width: 77% !important;
+                                margin-right: 10px;
+                            }
+                            #search_list {
+                                width: 77% !important;
+                            }
+                            .search_info {
+                                width: 77% !important;
+                            }
+                            .search_info.error {
+                                width: 77% !important;
+                            }
+                            .icon-ico_delete {
+                                left: 522px !important;
+                            }
+                        }
+                    }
+                    
+                    //MOBILE
+                    @media all and (max-width: 480px) {
+                        .menu-search {
+                            .search_list {
+                                .products {
+                                    &_elem {
+                                        .elem_name {
+                                            font-size: 11px;
+                                            width: 35%;
+                                        }
+                                        .elem_color {
+                                            margin: 5px 0px 5px 0px;
+                                            max-width: 71%;
+                                            float: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    /*PRELOADER*/
+                    
+                    .search_info {
+                        box-shadow: 0px 4px 10px 1px rgba(77, 91, 97, 0.35);
+                        border-left: 1px solid #b7c5cd;
+                        border-right: 1px solid #b7c5cd;
+                        border-bottom: 1px solid #b7c5cd;
+                        border-radius: 2px;
+                        position: absolute;
+                        background-color: #f5f6f9;
+                        height: 70px;
+                        top: 41px;
+                        left: -8px;
+                        width: 100%;
+                        display: none;
+                        .text {
+                            padding-top: 27px;
+                            font-size: 13px;
+                        }
+                    }
+                    
+                    .search_info.error {
+                        box-shadow: 0 4px 10px 1px rgba(77, 91, 97, .35);
+                        border-left: 1px solid #b7c5cd;
+                        border-right: 1px solid #b7c5cd;
+                        border-bottom: 1px solid #b7c5cd;
+                        border-radius: 2px;
+                        position: absolute;
+                        background-color: #f5f6f9;
+                        height: 70px;
+                        top: 2px;
+                        left: 0px;
+                        width: 100%;
+                        display: block;
+                        .text {
+                            padding-top: 24px;
+                            padding-left: 39px;
+                            font-size: 13px;
+                            white-space: normal;
+                        }
+                    }
+                    
+                    #circleG {
+                        width: 34px;
+                        height: 34px;
+                        padding: 33px 14px 0px 18px;
+                        float: left;
+                        -moz-box-sizing: initial;
+                        box-sizing: initial;
+                    }
+                    
+                    .circleG {
+                        -moz-box-sizing: initial;
+                        box-sizing: initial;
+                        background-color: #d7d7d7;
+                        float: left;
+                        height: 7px;
+                        margin-left: 4px;
+                        width: 7px;
+                        animation-name: bounce_circleG;
+                        -o-animation-name: bounce_circleG;
+                        -ms-animation-name: bounce_circleG;
+                        -webkit-animation-name: bounce_circleG;
+                        -moz-animation-name: bounce_circleG;
+                        animation-duration: 0.8775s;
+                        -o-animation-duration: 0.8775s;
+                        -ms-animation-duration: 0.8775s;
+                        -webkit-animation-duration: 0.8775s;
+                        -moz-animation-duration: 0.8775s;
+                        animation-iteration-count: infinite;
+                        -o-animation-iteration-count: infinite;
+                        -ms-animation-iteration-count: infinite;
+                        -webkit-animation-iteration-count: infinite;
+                        -moz-animation-iteration-count: infinite;
+                        animation-direction: normal;
+                        -o-animation-direction: normal;
+                        -ms-animation-direction: normal;
+                        -webkit-animation-direction: normal;
+                        -moz-animation-direction: normal;
+                        border-radius: 5px;
+                        -o-border-radius: 5px;
+                        -ms-border-radius: 5px;
+                        -webkit-border-radius: 5px;
+                        -moz-border-radius: 5px;
+                    }
+                    
+                    #circleG_1 {
+                        animation-delay: 0.1795s;
+                        -o-animation-delay: 0.1795s;
+                        -ms-animation-delay: 0.1795s;
+                        -webkit-animation-delay: 0.1795s;
+                        -moz-animation-delay: 0.1795s;
+                    }
+                    
+                    #circleG_2 {
+                        animation-delay: 0.4055s;
+                        -o-animation-delay: 0.4055s;
+                        -ms-animation-delay: 0.4055s;
+                        -webkit-animation-delay: 0.4055s;
+                        -moz-animation-delay: 0.4055s;
+                    }
+                    
+                    #circleG_3 {
+                        animation-delay: 0.5285s;
+                        -o-animation-delay: 0.5285s;
+                        -ms-animation-delay: 0.5285s;
+                        -webkit-animation-delay: 0.5285s;
+                        -moz-animation-delay: 0.5285s;
+                    }
+                    
+                    @keyframes bounce_circleG {
+                        0% {}
+                        50% {
+                            background-color: rgb(110, 120, 125);
+                        }
+                        100% {}
+                    }
+                    
+                    @-o-keyframes bounce_circleG {
+                        0% {}
+                        50% {
+                            background-color: rgb(110, 120, 125);
+                        }
+                        100% {}
+                    }
+                    
+                    @-ms-keyframes bounce_circleG {
+                        0% {}
+                        50% {
+                            background-color: rgb(110, 120, 125);
+                        }
+                        100% {}
+                    }
+                    
+                    @-webkit-keyframes bounce_circleG {
+                        0% {}
+                        50% {
+                            background-color: rgb(110, 120, 125);
+                        }
+                        100% {}
+                    }
+                    
+                    @-moz-keyframes bounce_circleG {
+                        0% {}
+                        50% {
+                            background-color: rgb(110, 120, 125);
+                        }
+                        100% {}
+                    }
